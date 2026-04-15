@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTecnología de PDVSA | Foro UPTP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #05070a; overflow-x: hidden; }
+        .gradient-text {
+            background: linear-gradient(90deg, #ff3131, #ff914d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Estilo para el Loader */
+        #loader {
+            position: fixed;
+            inset: 0;
+            z-index: 50;
+            background: #05070a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fira Code', monospace;
+        }
+        .terminal-loader { color: #ff3131; }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <div id="loader">
+        <div class="terminal-loader text-lg">
+            <p id="loader-text">> Iniciando sistema...</p>
+        </div>
+        <div class="w-48 h-1 bg-gray-800 mt-4 rounded-full overflow-hidden">
+            <div class="bg-red-600 h-full animate-[progress_2s_ease-in-out]" style="width: 100%"></div>
+        </div>
+    </div>
+
+    <main id="content" class="hidden">
+        <header class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" 
+                     class="w-full h-full object-cover opacity-20" alt="Fondo Industrial">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#05070a]"></div>
+            </div>
+
+            <div class="relative z-10 text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Sistema Infotecnológico <span class="gradient-text">PDVSA</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Transferencia tecnológica en: <br>
+                    <span class="text-white"><i class="fa-solid fa-oil-well"></i> Perforación | <i class="fa-solid fa-money-bill-trend-up"></i> Comercialización</span>
+                </p>
+                <a href="#registro" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 inline-block">
+                    ASEGURA TU CUPO
+                </a>
+            </div>
+        </header>
+
+        <section class="py-10 bg-gray-900/30 border-y border-gray-800">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-around text-center gap-6">
+                <h3 class="text-gray-500 uppercase tracking-widest text-sm font-bold">El foro inicia en:</h3>
+                <div class="flex space-x-6">
+                    <div><span id="days" class="text-3xl font-bold text-white">00</span><p class="text-[10px] text-gray-500">DÍAS</p></div>
+                    <div class="text-3xl font-bold text-red-600">:</div>
+                    <div><span id="hours" class="text-3xl font-bold text-white">00</span><p class="text-[10px] text-gray-500">HORAS</p></div>
+                    <div class="text-3xl font-bold text-red-600">:</div>
+                    <div><span id="minutes" class="text-3xl font-bold text-white">00</span><p class="text-[10px] text-gray-500">MINS</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-4 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">¿Qué ocurrió realmente en 2002?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gray-900/40 border-l-4 border-red-600 rounded-r-xl">
+                    <h4 class="font-bold mb-2 text-white">El Caso Intesa (SAIC)</h4>
+                    <p class="text-gray-400 text-sm">Descubre cómo una alianza externa puso en riesgo el cerebro digital de nuestra industria.</p>
+                </div>
+                <div class="p-6 bg-gray-900/40 border-l-4 border-orange-500 rounded-r-xl">
+                    <h4 class="font-bold mb-2 text-white">Recuperación Soberana</h4>
+                    <p class="text-gray-400 text-sm">El proceso técnico para retomar el control de los datos de yacimientos y finanzas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-900/50">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-10">Agenda y Expositores</h2>
+                <div class="flex flex-col md:flex-row justify-center gap-10">
+                    <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
+                        <div class="w-20 h-20 bg-red-600 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-white">636</div>
+                        <h4 class="font-bold italic">Equipo 2</h4>
+                        <p class="text-xs text-gray-500 mt-2">Estudiantes Universitarios de la seccion 636</p>
+                    </div>
+                    <div class="text-left space-y-4">
+                        <p>📅 <strong>Jueves 23 de Abril</strong></p>
+                        <p>⏰ <strong>7:00 PM</strong></p>
+                        <p>📍 <strong>Universidad UPTP</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10 bg-black">
+            <div class="max-w-5xl mx-auto px-4">
+
+                
+                <div class="rounded-2xl overflow-hidden border border-gray-800 h-64 grayscale hover:grayscale-0 transition duration-500">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.5614339673316!2d-69.19271971058355!3d9.546777077382941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7dc1620d2edeb1%3A0x8adf8913b1108b85!2sUniversidad%20Polit%C3%A9cnica%20Territorial%20del%20estado%20Portuguesa%20%22Juan%20de%20Jes%C3%BAs%20Montilla%22!5e0!3m2!1ses-419!2sve!4v1776263649460!5m2!1ses-419!2sve"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+            </div>
+        </section>
+
+        <section id="registro" class="py-20 px-4">
+            <div class="max-w-xl mx-auto bg-gray-900 p-8 rounded-3xl border border-gray-700 shadow-2xl">
+                <h2 class="text-3xl font-bold mb-6 text-center">Registro de Asistencia</h2>
+                <form action="#" class="space-y-4">
+                    <input type="text" placeholder="Nombre Completo" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:border-red-500">
+                    <input type="email" placeholder="Correo Electrónico" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 focus:outline-none focus:border-red-500">
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 py-3 rounded-lg font-bold transition">ENVIAR REGISTRO</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="py-8 text-center text-gray-500 border-t border-gray-800">
+            <p>© 2026 UPTP - Seccion 636 Equipo 2 | InfoTecnología PDVSA</p>
+        </footer>
+    </main>
+
+    <script>
+        // Lógica del Loader
+        const texts = ["> Conectando a nodos PDVSA...", "> Cargando datos de perforación...", "> Autenticando acceso soberano...", "> Sistema Listo."];
+        let i = 0;
+        const textElem = document.getElementById('loader-text');
+        
+        const interval = setInterval(() => {
+            textElem.innerText = texts[i];
+            i++;
+            if (i >= texts.length) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    document.getElementById('loader').style.display = 'none';
+                    document.getElementById('content').classList.remove('hidden');
+                }, 500);
+            }
+        }, 600);
+
+        // Lógica del Countdown al 23 de Abril
+        const targetDate = new Date('April 23, 2026 19:00:00').getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+            document.getElementById('days').innerText = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
+            document.getElementById('hours').innerText = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+            document.getElementById('minutes').innerText = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        }, 1000);
+    </script>
+</body>
+</html>
